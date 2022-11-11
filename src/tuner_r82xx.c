@@ -937,15 +937,13 @@ static int r82xx_read_gain(struct r82xx_priv *priv)
  */
 #define GAIN_NUM_STEPS 22
 static const int r82xx_vga_steps[GAIN_NUM_STEPS]  = {
-4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 12, 13
+4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 7, 8, 9, 10, 11, 12, 13
 };
-
 static const int r82xx_mixer_steps[GAIN_NUM_STEPS]  = {
-0, 0, 1, 1, 1, 1, 1, 2, 0, 0, 1, 0, 0, 5, 6, 6, 7, 8, 11, 11, 12, 12
+0, 0, 0, 0, 1, 2, 2, 3, 4, 4, 4, 7, 8, 9, 9, 10, 10, 11, 12, 12, 12, 12
 };
-
 static const int r82xx_lna_steps[GAIN_NUM_STEPS]  = {
-0, 0, 0, 0, 0, 0, 0, 1, 3, 5, 6, 8, 9, 8, 9, 9, 10, 12, 13, 14, 14, 14
+0, 1, 2, 3, 5, 6, 7, 8, 9, 9, 12, 12, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14
 };
 
 extern const int r82xx_gains[GAIN_NUM_STEPS];

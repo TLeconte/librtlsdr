@@ -959,9 +959,10 @@ const int fc0013_gains[] = { -99, -73, -65, -63, -60, -58, -54, 58, 61,
 			       63, 65, 67, 68, 70, 71, 179, 181, 182,
 			       184, 186, 188, 191, 197 };
 const int fc2580_gains[] = { 0 /* no gain values */ };
-const int r82xx_gains[] = { -86, -51, -22, -9, 5, 37, 73, 92, 130, 181,
-				217, 260, 291, 313, 354, 388, 439, 489,
-				528, 563, 611, 648 };
+const int r82xx_gains[] = { -86, -77, -64, -24, 32, 73, 95, 131, 181, 216,
+				275, 319, 341, 386, 410, 431, 445, 493,
+				542, 576, 611, 648
+};
 int rtlsdr_get_tuner_gains(rtlsdr_dev_t *dev, int *gains)
 {
 	const int unknown_gains[] = { 0 /* no gain values */ };
